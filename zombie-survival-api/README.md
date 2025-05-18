@@ -45,12 +45,12 @@ Uma API desenvolvida com Java e Spring Boot para simular um universo de sobreviv
 
 ---
 
-##🔍 Aprendizados e Desafios
+## 🔍 Aprendizados e Desafios
 Projeto desafiador por exigir organização de muitas classes, entidades e regras de negócio. Foi um ótimo exercício para aplicar o que aprendi em POO com um domínio divertido e criativo.
 
 ---
 
-##📈 Futuras Melhorias
+## 📈 Futuras Melhorias
 - Integração com interface gráfica web (React ou Angular)
 
 - Sistema de combate real-time via API
@@ -59,5 +59,5 @@ Projeto desafiador por exigir organização de muitas classes, entidades e regra
 
 ---
 
-##🧠 Autor
+## 🧠 Autor
 Kauã Reis — Desenvolvedor Java em formação, apaixonado por backend, APIs robustas e arquitetura limpa.
