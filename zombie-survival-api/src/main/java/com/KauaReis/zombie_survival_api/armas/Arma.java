@@ -1,7 +1,11 @@
 package com.KauaReis.zombie_survival_api.armas;
 
 import com.KauaReis.zombie_survival_api.itens.Item;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public abstract class Arma extends Item {
     protected int danoBase;
     protected double chanceAcerto; // 0.0 a 1.0
@@ -13,38 +17,6 @@ public abstract class Arma extends Item {
         this.danoBase = danoBase;
         this.chanceAcerto = chanceAcerto;
         this.chanceCritico = chanceCritico;
-        this.multiplicadorCritico = multiplicadorCritico;
-    }
-
-    public int getDanoBase() {
-        return danoBase;
-    }
-
-    public void setDanoBase(int danoBase) {
-        this.danoBase = danoBase;
-    }
-
-    public double getChanceAcerto() {
-        return chanceAcerto;
-    }
-
-    public void setChanceAcerto(double chanceAcerto) {
-        this.chanceAcerto = chanceAcerto;
-    }
-
-    public double getChanceCritico() {
-        return chanceCritico;
-    }
-
-    public void setChanceCritico(double chanceCritico) {
-        this.chanceCritico = chanceCritico;
-    }
-
-    public double getMultiplicadorCritico() {
-        return multiplicadorCritico;
-    }
-
-    public void setMultiplicadorCritico(double multiplicadorCritico) {
         this.multiplicadorCritico = multiplicadorCritico;
     }
 

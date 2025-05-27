@@ -24,15 +24,23 @@ public class Sobrevivente extends Personagem {
     private boolean vivo = true;
 
     // BARRAS
+    @Setter
+    @Getter
     private int saude;
+    @Getter
     private int fome;
+    @Getter
     private int sede;
     private int ataque;
     private int velocidade;
+    @Getter
     private int bandagens;
 
+    // GETTERS EXTRAS
     // INVENTÁRIO E EQUIPAMENTO
+    @Getter
     private List<Item> inventario = new ArrayList<>();
+    @Getter
     private Arma armaEquipada;
 
     // CONSTRUTORES
@@ -93,8 +101,7 @@ public class Sobrevivente extends Personagem {
 
         int danoCausado = armaEquipada.calcularDano();
 
-        if (armaEquipada instanceof ArmaDeFogo) {
-            ArmaDeFogo armaDeFogo = (ArmaDeFogo) armaEquipada;
+        if (armaEquipada instanceof ArmaDeFogo armaDeFogo) {
             if (!armaDeFogo.temMunicao()) {
                 System.out.println(this.getNome() + " tentou atirar com " + armaDeFogo.getNome() + ", mas está sem munição!");
                 return;
@@ -183,35 +190,6 @@ public class Sobrevivente extends Personagem {
             zumbi.setInfectado(true);
             System.out.println(this.getNome() + " morreu e virou um zumbi!");
         }
-    }
-
-    // GETTERS EXTRAS
-    public List<Item> getInventario() {
-        return inventario;
-    }
-
-    public Arma getArmaEquipada() {
-        return armaEquipada;
-    }
-
-    public int getSaude() {
-        return saude;
-    }
-
-    public int getBandagens() {
-        return bandagens;
-    }
-
-    public int getFome() {
-        return fome;
-    }
-
-    public int getSede() {
-        return sede;
-    }
-
-    public void setSaude(int saude) {
-        this.saude = saude;
     }
 
 }

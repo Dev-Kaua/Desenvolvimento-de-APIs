@@ -9,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class ZombieSurvivalApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZombieSurvivalApiApplication.class, args);
+		SpringApplication.run(ZombieSurvivalApiApplication.class ,args);
 	}
 
 }

@@ -1,20 +1,33 @@
 package com.KauaReis.zombie_survival_api.personagens;
 
 import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Zumbi extends Personagem{
     private int ataque;
+    // Getters caso precise usar externamente
+    @Setter
+    @Getter
     private String nome;
     private String tipo;
+    @Setter
+    @Getter
     private int vida;
+    @Getter
     private int forca;
+    @Getter
     private int velocidade;
+    @Getter
     private int nivel;
     private boolean vivo;
     private List<String> efeitos;
+    @Setter
     private boolean infectado;
+    @Getter
     private TipoZumbi tipoZumbi;
 
 
@@ -36,10 +49,6 @@ public class Zumbi extends Personagem{
     // 🧱 Construtor rápido para testes
     public Zumbi(String nome, TipoZumbi tipoZumbi) {
         this(nome, tipoZumbi, 100, 10, 5, false);
-    }
-
-    public TipoZumbi getTipoZumbi() {
-        return tipoZumbi;
     }
 
     public enum TipoZumbi {
@@ -117,36 +126,4 @@ public class Zumbi extends Personagem{
                 "Status: " + (vivo ? "Vivo" : "Morto");
     }
 
-    // Getters caso precise usar externamente
-    public String getNome() {
-        return nome;
-    }
-
-    public int getVida() {
-        return vida;
-    }
-
-    public int getForca() {
-        return forca;
-    }
-
-    public int getVelocidade() {
-        return velocidade;
-    }
-
-    public int getNivel() {
-        return nivel;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setVida(int vida) {
-        this.vida = vida;
-    }
-
-    public void setInfectado(boolean infectado) {
-        this.infectado = infectado;
-    }
 }

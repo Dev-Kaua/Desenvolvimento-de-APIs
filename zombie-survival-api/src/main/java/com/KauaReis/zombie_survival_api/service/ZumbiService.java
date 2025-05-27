@@ -78,6 +78,7 @@ public class ZumbiService {
                 if (!vivos.isEmpty()) {
                     Sobrevivente alvo = escolherSobreviventeAleatorio();
                     z.atacar(alvo);
+                    assert alvo != null;
                     if (!alvo.estaVivo()) {
                         // sobreviveu -> morreu -> virou zumbi
                         Zumbi novoZumbi = new Zumbi(alvo.getNome(), Zumbi.TipoZumbi.NORMAL);

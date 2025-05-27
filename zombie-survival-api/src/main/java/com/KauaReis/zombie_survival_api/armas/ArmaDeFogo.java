@@ -1,6 +1,9 @@
 package com.KauaReis.zombie_survival_api.armas;
 
+import lombok.Setter;
+
 public class ArmaDeFogo extends Arma {
+    @Setter
     private int capacidadeMunicao;
     private int municaoAtual;
 
@@ -12,10 +15,6 @@ public class ArmaDeFogo extends Arma {
 
     public int getCapacidadeMunicao() {
         return capacidadeMunicao;
-    }
-
-    public void setCapacidadeMunicao(int capacidadeMunicao) {
-        this.capacidadeMunicao = capacidadeMunicao;
     }
 
     public int getMunicaoAtual() {

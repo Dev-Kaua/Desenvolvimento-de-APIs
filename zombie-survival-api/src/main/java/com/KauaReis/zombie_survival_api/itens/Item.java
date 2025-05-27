@@ -1,5 +1,10 @@
 package com.KauaReis.zombie_survival_api.itens;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class Item {
     private String nome;
     private String tipo;
@@ -10,19 +15,4 @@ public class Item {
         this.tipo = tipo;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 }
